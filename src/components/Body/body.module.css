@@ -1,0 +1,13 @@
+.body{
+    padding: 20px;
+    background: white;
+
+ .cardContainer{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+ }
+
+}
+
+

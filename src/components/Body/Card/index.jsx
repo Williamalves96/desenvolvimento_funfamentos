@@ -1,0 +1,16 @@
+import React from 'react'
+import styles from './cards.module.css'
+
+const Card = ({nome, idade, cidade}) => {
+    return (
+        <div className={styles.cards}>
+
+            <h3>{nome}</h3>
+            <p>Idade:{idade}</p>
+            <p>Cidade:{cidade}</p>
+        </div>
+
+    )
+}
+
+export default Card
