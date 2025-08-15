@@ -3,7 +3,7 @@ import styles from './cards.module.css'
 
 const Card = ({nome, idade, cidade}) => {
     return (
-        <div className={styles.cards}>
+        <div className={styles.card}>
 
             <h3>{nome}</h3>
             <p>Idade:{idade}</p>

@@ -1,4 +1,5 @@
 import Card from "./Card";
+import { CardApi } from "./Card/CardApi";
 import styles from "./body.module.css"
 
 function Body() {
@@ -8,10 +9,24 @@ function Body() {
         { nome: "Will", idade: 29, cidade: "Floripa" }
     ]
     return (
-        <main className={styles.Body}>
+        <main className={styles.body}>
             <h2>Usuarios cadastrados</h2>
             <div className={styles.cardContainer}>
-                <Card />
+                {usuarios.map((usuario,index) => (
+                    <Card
+                        key={index}
+                        nome={usuario.nome}
+                        idade={usuario.idade}
+                        cidade={usuario.cidade}
+                    />
+
+
+                ))}
+
+            </div>
+            <h2>Usuario de API</h2>
+            <div className={styles.cardContainer}>
+                <CardApi/>
             </div>
 
         </main>
